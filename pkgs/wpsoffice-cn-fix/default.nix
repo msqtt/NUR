@@ -21,7 +21,7 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "wpsoffice";
+  pname = "wpsoffice-cn-fix";
   version = "11.1.0.11711";
 
   src = fetchurl {
