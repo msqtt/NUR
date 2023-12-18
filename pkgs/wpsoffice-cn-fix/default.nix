@@ -94,14 +94,4 @@ stdenv.mkDerivation rec {
     patchelf --add-needed libudev.so.1 $out/opt/kingsoft/wps-office/office6/addons/cef/libcef.so
     install -Dt "$out/opt/kingsoft/wps-office/office6" -m644 ${freetype}/lib/libfreetype.so.6
   '';
-
-  meta = with lib; {
-    description = "Office suite, formerly Kingsoft Office";
-    homepage = "https://www.wps.com";
-    platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    hydraPlatforms = [ ];
-    license = licenses.unfreeRedistributable;
-    maintainers = with maintainers; [ mlatus th0rgal rewine ];
-  };
 }
