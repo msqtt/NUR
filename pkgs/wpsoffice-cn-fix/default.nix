@@ -1,4 +1,5 @@
 { lib
+, pkgs
 , stdenv
 , fetchurl
 , dpkg
@@ -12,7 +13,7 @@
 , libtiff
 , udev
 , gtk3
-, qtbase
+, qtbase ? pkgs.libsForQt5.qt5.qtbase
 , xorg
 , cups
 , pango
