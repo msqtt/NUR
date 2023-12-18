@@ -16,6 +16,8 @@
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
   bobibo = pkgs.callPackage ./pkgs/bobibo { };
+  freetype = pkgs.callPackage ./pkgs/freetype { };
+  wpsoffice-cn-fix = pkgs.callPackage ./pkgs/wpsoffice-cn-fix { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

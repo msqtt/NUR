@@ -1,5 +1,5 @@
 {
   # Add your overlays here
   #
-  # my-overlay = import ./my-overlay;
+  # wpsoffice-cn = import ./wpsoffice-cn;
 }
