@@ -18,6 +18,7 @@
   bobibo = pkgs.callPackage ./pkgs/bobibo { };
   freetype = pkgs.callPackage ./pkgs/freetype { };
   wpsoffice-cn-fix = pkgs.callPackage ./pkgs/wpsoffice-cn-fix { };
+  listenme = pkgs.callPackage ./pkgs/listenme { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
