@@ -4,13 +4,13 @@
 }:
 buildGoModule rec {
   pname = "listenme";
-  version = "0.3.1";
+  version = "0.3.2";
 
   src = fetchFromGitHub {
     owner = "msqtt";
     repo = "listenme";
     rev = "v${version}";
-    hash = "sha256-ZBYQvkgFfbellwRulVpaIE6VtCnpq/dr5hu3wtfhE8Q=";
+    hash = "sha256-WXkCFOArk1RENoF7P4K1IxzFPKJeexRSg90JQKT4VVI=";
   };
 
   vendorHash = "sha256-R9m0sj4ReajbU/+Iro7xYkCVNcGZ+VT0/GFeOd/R8pA=";
