@@ -7,13 +7,13 @@
 buildGoModule
 rec {
   pname = "bobibo";
-  version = "1.4.0";
+  version = "1.4.2";
 
   src = fetchFromGitHub {
     owner = "orzation";
     repo = pname;
     rev = "v${version}";
-    hash = "sha256-/esS/CyjHdHMVsIdugRoggecMI//tGuCaayEiNBEocM=";
+    hash = "sha256-L5KDp3y/fT5l+yUahDonSmhAJgZlF9ECDPyUJSCWEkA=";
   };
 
   vendorHash = "sha256-LzP2pgRheL/NRQmjluqKb8/yxAuFjbmXVU57HdrGSDU=";
@@ -25,7 +25,7 @@ rec {
     pkg-config
   ];
 
-	doCheck = false;
+  doCheck = false;
 
   postInstall = ''
     mv $out/bin/cli $out/bin/bobibo
