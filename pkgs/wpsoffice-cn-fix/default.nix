@@ -22,11 +22,11 @@
 
 stdenv.mkDerivation rec {
   pname = "wpsoffice-cn-fix";
-  version = "11.1.0.11711";
+  version = "11.1.0.11719";
 
   src = fetchurl {
-    url = "https://wps-linux-personal.wpscdn.cn/wps/download/ep/Linux2019/${lib.last (lib.splitVersion version)}/wps-office_${version}_amd64.deb";
-    hash = "sha256-JHSTZZnOZoTpj8zF4C5PmjTkftEdxbeaqweY3ITiJto=";
+    url = "https://wps-linux-personal.wpscdn.cn/wps/download/ep/Linux2019/${lib.last (lib.splitVersion pkgVersion)}/wps-office_${pkgVersion}_amd64.deb";
+    hash = "sha256-LgE5du2ZnMsAqgoQkY63HWyWYA5TLS5I8ArRYrpxffs=";
   };
 
   unpackCmd = "dpkg -x $src .";
