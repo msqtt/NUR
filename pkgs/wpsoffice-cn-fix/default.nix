@@ -116,7 +116,6 @@ stdenv.mkDerivation rec {
       substituteInPlace $i \
         --replace /usr/bin $out/bin
     done
-    mv $out/bin/et $out/bin/wpset
     runHook postInstall
   '';
 
